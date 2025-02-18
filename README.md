@@ -1,6 +1,3 @@
-To parse the output of 'waf_details.txt' into a CSV, run this one-liner in the terminal:
-$ awk -F" : " '{gsub(/\x1b\[[0-9;]*m/,"",$2); print $1 "," $2}' waf_details.txt > waf_details.csv
-
 # MassH0wl
 
 MassH0wl is a lightweight Bash script that automates the use of wafw00f on a list of domains. It helps you quickly determine whether a target is protected by a Web Application Firewall (WAF) or not, and organizes the results for further analysis.
